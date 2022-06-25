@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- 1st bean -->
+	<bean class="com.prowings.Student" name="student1">
+		<property name="studentId" >
+			<value>1</value>
+		</property>
+		<property name="studentName">
+			<value>Pranali Bhore</value>
+		</property>
+		<property name="studentAddress">
+			<value>Pune</value>
+		</property>
+	</bean>
+
+	<!-- 2nd bean -->
+	<bean class="com.prowings.Student" name="student2">
+		<property name="studentId" value="2" />
+		<property name="studentName" value="Abhijeet Maske" />
+		<property name="studentAddress" value="Satara" />
+	</bean>
+
+	<!-- 3rd bean -->
+	<bean class="com.prowings.Student" name="student3" p:studentId="3" p:studentName="ABC Xyz" p:studentAddress="Mumbai" />
+
+
+</beans>
